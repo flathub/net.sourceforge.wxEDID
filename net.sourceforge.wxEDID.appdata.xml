@@ -2,7 +2,7 @@
 <component type="desktop">
   <id>net.sourceforge.wxEDID</id>
   <name>wxEDID</name>
-  <summary>Edit edid</summary>
+  <summary>Read and edit Extended Display Identification Data (EDID) files</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <launchable type="desktop-id">net.sourceforge.wxEDID.desktop</launchable>
   <content_rating type="oars-1.1"/>
@@ -22,13 +22,13 @@
     <screenshot type="default">
       <caption>wxEDID EDID block tree</caption>
       <image width="868" height="669">
-        https://a.fsdn.com/con/app/proj/wxedid/screenshots/BlockTree-801eb1dc.png/max/max/1
+        https://a.fsdn.com/con/app/proj/wxedid/screenshots/BlockTree-801eb1dc.png
       </image>
     </screenshot>
     <screenshot>
       <caption>wxEDID DTD Constructor</caption>
       <image width="868" height="669">
-        https://a.fsdn.com/con/app/proj/wxedid/screenshots/DTD_Ctor-216978b8.png/max/max/1
+        https://a.fsdn.com/con/app/proj/wxedid/screenshots/DTD_Ctor-216978b8.png
       </image>
     </screenshot>
   </screenshots>
