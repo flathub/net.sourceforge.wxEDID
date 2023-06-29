@@ -4,6 +4,7 @@
   <name>wxEDID</name>
   <summary>Read and edit Extended Display Identification Data (EDID) files</summary>
   <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
   <launchable type="desktop-id">net.sourceforge.wxEDID.desktop</launchable>
   <content_rating type="oars-1.1"/>
   <description>
