@@ -1,7 +1,7 @@
-diff --color -ruN wxWidgets-3.2.2.1/include/wx/defs.h wxWidgets-3.2.2.1_native/include/wx/defs.h
---- wxWidgets-3.2.2.1/include/wx/defs.h	2023-06-01 19:49:32.132890725 +0100
-+++ wxWidgets-3.2.2.1_native/include/wx/defs.h	2023-06-01 19:50:01.583608048 +0100
-@@ -3153,6 +3153,7 @@
+diff --color -ruN a/include/wx/defs.h b/include/wx/defs.h
+--- a/include/wx/defs.h	2023-10-07 15:28:50.000000000 +0100
++++ b/include/wx/defs.h	2023-10-11 20:02:22.817117554 +0100
+@@ -3157,6 +3157,7 @@
  
  /* Stand-ins for GTK types */
  typedef struct _GtkWidget         GtkWidget;
@@ -9,9 +9,9 @@ diff --color -ruN wxWidgets-3.2.2.1/include/wx/defs.h wxWidgets-3.2.2.1_native/i
  typedef struct _GtkRcStyle        GtkRcStyle;
  typedef struct _GtkAdjustment     GtkAdjustment;
  typedef struct _GtkToolbar        GtkToolbar;
-diff --color -ruN wxWidgets-3.2.2.1/include/wx/gtk/dialog.h wxWidgets-3.2.2.1_native/include/wx/gtk/dialog.h
---- wxWidgets-3.2.2.1/include/wx/gtk/dialog.h	2023-02-13 14:45:39.000000000 +0000
-+++ wxWidgets-3.2.2.1_native/include/wx/gtk/dialog.h	2023-06-01 19:50:50.207138937 +0100
+diff --color -ruN a/include/wx/gtk/dialog.h b/include/wx/gtk/dialog.h
+--- a/include/wx/gtk/dialog.h	2023-10-07 15:28:50.000000000 +0100
++++ b/include/wx/gtk/dialog.h	2023-10-11 20:02:28.439208717 +0100
 @@ -39,6 +39,8 @@
      virtual void EndModal( int retCode ) wxOVERRIDE;
      virtual bool IsModal() const wxOVERRIDE;
@@ -21,9 +21,9 @@ diff --color -ruN wxWidgets-3.2.2.1/include/wx/gtk/dialog.h wxWidgets-3.2.2.1_na
  private:
      // common part of all ctors
      void Init();
-diff --color -ruN wxWidgets-3.2.2.1/src/gtk/dialog.cpp wxWidgets-3.2.2.1_native/src/gtk/dialog.cpp
---- wxWidgets-3.2.2.1/src/gtk/dialog.cpp	2023-02-13 14:45:39.000000000 +0000
-+++ wxWidgets-3.2.2.1_native/src/gtk/dialog.cpp	2023-06-01 23:14:58.901684292 +0100
+diff --color -ruN a/src/gtk/dialog.cpp b/src/gtk/dialog.cpp
+--- a/src/gtk/dialog.cpp	2023-10-07 15:28:50.000000000 +0100
++++ b/src/gtk/dialog.cpp	2023-10-11 20:02:31.530258839 +0100
 @@ -31,6 +31,7 @@
  
  void wxDialog::Init()
@@ -107,9 +107,9 @@ diff --color -ruN wxWidgets-3.2.2.1/src/gtk/dialog.cpp wxWidgets-3.2.2.1_native/
  
      return GetReturnCode();
  }
-diff --color -ruN wxWidgets-3.2.2.1/src/gtk/dirdlg.cpp wxWidgets-3.2.2.1_native/src/gtk/dirdlg.cpp
---- wxWidgets-3.2.2.1/src/gtk/dirdlg.cpp	2023-02-13 14:45:39.000000000 +0000
-+++ wxWidgets-3.2.2.1_native/src/gtk/dirdlg.cpp	2023-06-02 13:05:14.579407212 +0100
+diff --color -ruN a/src/gtk/dirdlg.cpp b/src/gtk/dirdlg.cpp
+--- a/src/gtk/dirdlg.cpp	2023-10-07 15:28:50.000000000 +0100
++++ b/src/gtk/dirdlg.cpp	2023-10-11 20:02:34.384305117 +0100
 @@ -88,42 +88,37 @@
      if (parent)
          gtk_parent = GTK_WINDOW( gtk_widget_get_toplevel(parent->m_widget) );
@@ -190,9 +190,9 @@ diff --color -ruN wxWidgets-3.2.2.1/src/gtk/dirdlg.cpp wxWidgets-3.2.2.1_native/
                                              wxGTK_CONV_FN(dir));
      }
  }
-diff --color -ruN wxWidgets-3.2.2.1/src/gtk/filedlg.cpp wxWidgets-3.2.2.1_native/src/gtk/filedlg.cpp
---- wxWidgets-3.2.2.1/src/gtk/filedlg.cpp	2023-02-13 14:45:39.000000000 +0000
-+++ wxWidgets-3.2.2.1_native/src/gtk/filedlg.cpp	2023-06-02 19:54:54.104905856 +0100
+diff --color -ruN a/src/gtk/filedlg.cpp b/src/gtk/filedlg.cpp
+--- a/src/gtk/filedlg.cpp	2023-10-07 15:28:50.000000000 +0100
++++ b/src/gtk/filedlg.cpp	2023-10-11 20:02:37.451354851 +0100
 @@ -159,7 +159,7 @@
          child->m_widget, child->GetMinWidth(), child->m_height);
  
