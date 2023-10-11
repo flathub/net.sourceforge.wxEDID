@@ -6,11 +6,12 @@ sdk: org.freedesktop.Sdk
 command: wxedid
 
 finish-args:
-  - --socket=fallback-x11
+  - --socket=x11
   - --share=ipc
 
 modules:
   - name: wxwidgets
+    buildsystem: cmake-ninja
     cleanup:
       - /bin
       - /include
