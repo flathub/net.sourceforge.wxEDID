@@ -1,6 +1,6 @@
 app-id: net.sourceforge.wxEDID
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 
 command: wxedid
@@ -10,7 +10,7 @@ finish-args:
   - --share=ipc
 
 modules:
-  - name: wxwidgets
+  - name: wxWidgets
     buildsystem: cmake-ninja
     cleanup:
       - /bin
@@ -31,6 +31,9 @@ modules:
         path: wx_gtkchoosernative.patch
 
   - name: wxedid
+    config-opts:
+      # Stop overriding of flatpak-builder env
+      - --enable-build-mode=none
     sources:
       - type: archive
         url: https://downloads.sourceforge.net/wxedid/wxedid-0.0.29.tar.gz
