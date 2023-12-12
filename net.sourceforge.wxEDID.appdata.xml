@@ -41,6 +41,6 @@
   </provides>
 
   <releases>
-    <release version="32.0.0.465" date="2020-12-08"/>
+    <release version="0.0.29" date="2023-05-22"/>
   </releases>
 </component>
