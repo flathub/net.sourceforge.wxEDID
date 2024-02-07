@@ -5,7 +5,11 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <name>wxEDID</name>
-  <summary>Read and edit Extended Display Identification Data (EDID) files</summary>
+  <developer_name>Tomasz Pawlak</developer_name>
+  <developer>
+    <name>Tomasz Pawlak</name>
+  </developer>
+  <summary>Read and edit EDID files</summary>
 
   <description>
     <p>
