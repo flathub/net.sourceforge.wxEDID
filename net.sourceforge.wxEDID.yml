@@ -6,7 +6,8 @@ sdk: org.freedesktop.Sdk
 command: wxedid
 
 finish-args:
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --share=ipc
 
 modules:
@@ -20,8 +21,8 @@ modules:
       - /share
     sources:
       - type: archive
-        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.2.1/wxWidgets-3.2.2.1.tar.bz2
-        sha256: dffcb6be71296fff4b7f8840eb1b510178f57aa2eb236b20da41182009242c02
+        url: https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.4/wxWidgets-3.2.4.tar.bz2
+        sha256: 0640e1ab716db5af2ecb7389dbef6138d7679261fbff730d23845ba838ca133e
         x-checker-data:
           type: anitya
           project-id: 5150
@@ -36,8 +37,8 @@ modules:
       - --enable-build-mode=none
     sources:
       - type: archive
-        url: https://downloads.sourceforge.net/wxedid/wxedid-0.0.29.tar.gz
-        sha256: fc5d835beaccb5ea7ed4963ae6a0c1d343c697ecb162c4720d7e0a348972f067
+        url: https://downloads.sourceforge.net/wxedid/wxedid-0.0.30.tar.gz
+        sha256: 0d4dbc44617e5df4060a1fb59a47d708fe1eff9df1495b624e1410e5ce771a25
         x-checker-data:
           type: json
           url: https://sourceforge.net/projects/wxedid/best_release.json
