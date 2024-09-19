@@ -1,6 +1,6 @@
 app-id: net.sourceforge.wxEDID
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 
 command: wxedid
@@ -13,6 +13,27 @@ finish-args:
 modules:
   - name: wxWidgets
     buildsystem: cmake-ninja
+    config-opts:
+      - -DwxUSE_DOC_VIEW_ARCHITECTURE=OFF
+      - -DwxUSE_HELP=OFF
+      #- -DwxUSE_HTML=OFF
+      - -DwxUSE_RICHTEXT=OFF
+      - -DwxUSE_WEBVIEW=OFF
+      - -DwxUSE_STC=OFF
+      - -DwxUSE_MDI_ARCHITECTURE=OFF
+      - -DwxUSE_MDI=OFF
+      - -DwxUSE_OPENGL=OFF
+      - -DwxUSE_ARCHIVE_STREAMS=OFF
+      - -DwxUSE_ACTIVEX=OFF
+      - -DwxUSE_MEDIACTRL=OFF
+      - -DwxUSE_WEBREQUEST=OFF
+      - -DwxUSE_SECRETSTORE=OFF
+      - -DwxUSE_SOUND=OFF
+      - -DwxUSE_LIBSDL=OFF
+      - -DwxUSE_RIBBON=OFF
+      - -DwxUSE_SVG=OFF
+      - -DwxUSE_PROPGRID=OFF
+      - -DwxUSE_WXHTML_HELP=OFF
     cleanup:
       - /bin
       - /include
