@@ -49,8 +49,6 @@ modules:
           project-id: 5150
           stable-only: true
           url-template: https://github.com/wxWidgets/wxWidgets/releases/download/v$version/wxWidgets-$version.tar.bz2
-      - type: patch
-        path: wx_gtkchoosernative.patch
 
   - name: wxedid
     config-opts:
