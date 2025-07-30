@@ -34,7 +34,15 @@
     </screenshot>
     <screenshot>
       <caption>wxEDID DTD Constructor</caption>
-      <image width="868" height="669">https://a.fsdn.com/con/app/proj/wxedid/screenshots/DTD_Ctor-216978b8.png</image>
+      <image width="798" height="653">https://a.fsdn.com/con/app/proj/wxedid/screenshots/DTD_constructor-ac2e7040.png</image>
+    </screenshot>
+    <screenshot environment="gnome:dark">
+      <caption>wxEDID EDID block tree</caption>
+      <image width="798" height="653">https://a.fsdn.com/con/app/proj/wxedid/screenshots/BlockTree_dark-bc157dd2.png</image>
+    </screenshot>
+    <screenshot environment="gnome:dark">
+      <caption>wxEDID DTD Constructor</caption>
+      <image width="798" height="653">https://a.fsdn.com/con/app/proj/wxedid/screenshots/DTD_constructor_dark-cd8e012e.png</image>
     </screenshot>
   </screenshots>
 
