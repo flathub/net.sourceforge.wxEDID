@@ -56,8 +56,8 @@ modules:
       - --enable-build-mode=none
     sources:
       - type: archive
-        url: https://downloads.sourceforge.net/wxedid/wxedid-0.0.32.tar.gz
-        sha256: 5d86d136e43e85ad3980982cecff87cf175192c151247c4b8960df9c5e461cc2
+        url: https://downloads.sourceforge.net/wxedid/wxedid-0.0.33.tar.gz
+        sha256: a59fef44bb9217ff3d4fb31fd90a8c0ac2c0c0499858016fbe008c8fd7f563d7
         x-checker-data:
           type: json
           url: https://sourceforge.net/projects/wxedid/best_release.json
