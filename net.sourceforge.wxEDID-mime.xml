@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/x-edid">
+    <comment>EDID blob</comment>
+    <acronym>EDID</acronym>
+    <expanded-acronym>Extended Display Identification Data</expanded-acronym>
+    <sub-class-of type="application/octet-stream"/>
+    <glob pattern="*.edid"/>
+    <!-- <glob pattern="*.bin"/> -->
+    <magic priority="50">
+      <match type="string" value="\x00\xFF\xFF\xFF\xFF\xFF\xFF\x00" offset="0"/>
+    </magic>
+  </mime-type>
+</mime-info>
