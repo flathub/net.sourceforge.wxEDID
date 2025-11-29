@@ -71,13 +71,16 @@ modules:
       - type: file
         path: net.sourceforge.wxEDID.appdata.xml
       - type: file
+        path: net.sourceforge.wxEDID-mime.xml
+      - type: file
         path: net.sourceforge.wxEDID.svg
     post-install:
-      - install -Dm644 -t /app/share/applications/ net.sourceforge.wxEDID.desktop
-      - install -Dm644 -t /app/share/metainfo/ net.sourceforge.wxEDID.appdata.xml
+      - install -Dm644 net.sourceforge.wxEDID.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
+      - install -Dm644 net.sourceforge.wxEDID.appdata.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.appdata.xml
+      - install -Dm644 net.sourceforge.wxEDID-mime.xml ${FLATPAK_DEST}/share/mime/packages/${FLATPAK_ID}.xml
       - |
-        install -Dm644 -t /app/share/icons/hicolor/scalable/apps/ net.sourceforge.wxEDID.svg
+        install -Dm644 net.sourceforge.wxEDID.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
         for s in 16 24 32 48 64 128 256 ; do
-          rsvg-convert net.sourceforge.wxEDID.svg -w "${s}" -h "${s}" -a -f png -o net.sourceforge.wxEDID.png
-          install -Dm644 -t "/app/share/icons/hicolor/${s}x${s}/apps/" net.sourceforge.wxEDID.png
+          rsvg-convert net.sourceforge.wxEDID.svg -w "${s}" -h "${s}" -a -f png -o icon.png
+          install -Dm644 icon.png "${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/${FLATPAK_ID}.png"
         done

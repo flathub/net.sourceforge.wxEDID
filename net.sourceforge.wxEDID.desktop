@@ -2,7 +2,8 @@
 Name=wxEDID
 Comment=Edit edid
 Type=Application
-MimeType=application/octet-stream
+# MimeType=application/octet-stream
+MimeType=application/x-edid
 Categories=Utility;
 Keywords=EDID;
 Exec=wxedid %f
